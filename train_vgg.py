@@ -7,12 +7,12 @@ import matplotlib
 matplotlib.use("Agg")
 
 # import semua library dan packages
-from finalproject.vgg16 import VGG16
+
 from sklearn.preprocessing import LabelBinarizer
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, confusion_matrix
 from keras.preprocessing.image import ImageDataGenerator
-from keras.optimizers import SGD
+from tensorflow.keras.optimizers import SGD
 from imutils import paths
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -22,6 +22,7 @@ import random
 import pickle
 import cv2
 import os
+from model.vgg16 import VGG16
 
 # argumen parser
 ap = argparse.ArgumentParser()
